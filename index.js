@@ -3,6 +3,8 @@ var morgan = require('morgan')
 const app = express()
 const cors = require('cors')
 app.use(cors())
+app.use(express.static('build'))
+
 
 // dont forget this to handle json POST requests!!
 app.use(express.json())
