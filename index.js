@@ -118,7 +118,9 @@ app.post('/api/persons', (request, response) => {
         id: id
     }
     data = data.concat(person)
+    console.log(data)
     response.json(data)
+    
 })
 // this will only be called if there is no matching route...thats why it is at the bottom
 
